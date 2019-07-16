@@ -2,50 +2,141 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 @import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 body {
     height: 150vh;
     width: 100vw;
@@ -53,26 +144,30 @@ body {
     background-color: whitesmoke;
     justify-content: center;
     color: purple;
-    font-family:  'Handlee', cursive;
+    font-family: 'Handlee', cursive;
     font-style: bold;
 }
+
 .leftpage {
     height: 100%;
     width: 20%;
     background-color: blue;
     background-image: url("./pictures/imageleft.jpg");
 }
-.rightpage{
-        height: 100%;
-        width: 20%;
-        background-color: blue;
-        background-image: url("./pictures/imageright.jpg");
+
+.rightpage {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    background-image: url("./pictures/imageright.jpg");
 }
+
 header {
     height: 5%;
     width: 100%;
     background-color: skyblue;
 }
+
 main {
     height: 100%;
     width: 70%;
@@ -80,6 +175,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .charactersheet {
     height: 95%;
     width: 100%;
@@ -89,29 +185,37 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .cSHeader {
     height: 9vw;
     width: 97%;
-    border: 4px black solid;
+    /* border: 4px black solid; */
     display: flex;
+    position: relative;
+    top: 8px;
 }
+
 .cSHeader1 {
     height: 100%;
     width: 37%;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 2vh;
 }
+
 .cSHeader2 {
     height: 100%;
-    width: 50%;
-    border: 2px black solid;
+    width: 45%;
+    /* border: 2px black solid; */
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-around;
 }
+
 #charName {
     position: relative;
     top: 10%;
@@ -119,28 +223,79 @@ main {
     list-style: none;
     font-size: 2.5rem;
 }
+
 .user {
-    height: 30%;
-    width: 30%;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    height: 2.5vh;
+    width: 8vw;
 }
+
 .userbot {
-    height: 30%;
-    width: 30%;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 2.5vh;
+    width: 8vw;
+    position: relative;
+    bottom: 2.5vh;
 }
 
 .cSMain {
     height: 75vw;
     width: 97%;
-    border: 4px black solid;    
+    border: 4px black solid;
     list-style: none;
+    display: flex;
+}
+
+#characterName {
+    height: 4vh;
+    width: 15vw;
+}
+
+.information {
+    height: 100%;
+    width: 30%;
+    border: 1px black solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats {
+    height: 65%;
+    width: 30%;
+    border: 2px black solid;
+    margin: 13% 0 0 6%;
+}
+
+.bonuses {
+    height: 67%;
+    width: 58%;
+    border: 2px black solid;
+    margin: 10% 0 0 1%;
+}
+
+.passiveperception {
+    width: 90%;
+    height: 4%;
+    border: 2px black solid;
+    margin: 10% 0 0 1%;
+    position: relative;
+    bottom: 2%;
+    left: 4%;
+}
+
+.otherprof {
+    width: 90%;
+    height: 21%;
+    border: 2px black solid;
+    position: relative;
+    bottom: 1%;
+    left: 4%;
 }

@@ -24,18 +24,27 @@ render() {
           <div className="charactersheet">
             <div className="cSHeader">
               <div className="cSHeader1">
-                <li id= "charName">IonSteel</li>
+                <input id="characterName" type="text" placeholder="name"/>
               </div>
               <div className="cSHeader2">
-                  <li className="user">Bard 4</li>
-                  <li className="user">Sailor</li>
-                  <li className="user">Blake T</li>
-                  <li className="userbot">Tiefling</li>
-                  <li className="userbot">Chaotic Neut</li>
-                  <li className="userbot">300</li>
+                  <input className="user"/>
+                  <input className="user"/>
+                  <input className="user"/>
+                  <input className="userbot"/>
+                  <input className="userbot"/>
+                  <input className="userbot"/>
               </div>
             </div>
-            <div className="cSMain"></div>
+            <div className="cSMain">
+              <div className="information">
+                <div className="stats"></div>
+                <div className="bonuses"></div>
+                <div className="passiveperception"></div>
+                <div className="otherprof"></div>
+              </div>
+              <div className="information"></div>
+              <div className="information"></div>
+            </div>
         </div>
         </main>
       <footer></footer>
