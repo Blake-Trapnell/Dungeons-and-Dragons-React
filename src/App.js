@@ -37,8 +37,20 @@ render() {
             </div>
             <div className="cSMain">
               <div className="information">
-                <div className="stats"></div>
-                <div className="bonuses"></div>
+                <div className="statsColumn">
+                  <input className="stats" type="text"/>
+                  <input className="stats" type="text"/>
+                  <input className="stats" type="text"/>
+                  <input className="stats" type="text"/>
+                  <input className="stats" type="text"/>
+                  <input className="stats" type="text"/>
+                </div>
+                <div className="bonuses">
+                  <input className="inspiration"/>
+                  <input className="inspiration"/>
+                  <div className="savingThrows"></div>
+                  <div className="skills"></div>
+                </div>
                 <div className="passiveperception"></div>
                 <div className="otherprof"></div>
               </div>
