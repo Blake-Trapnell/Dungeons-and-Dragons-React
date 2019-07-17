@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+
+body {
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    color: purple;
+    font-family: 'Handlee', cursive;
+    font-style: bold;
+}
+
+.leftpage {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    background-image: url("./pictures/imageleft.jpg");
+}
+
+.rightpage {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    background-image: url("./pictures/imageright.jpg");
+}
+
+header {
+    height: 5%;
+    width: 100%;
+    background-color: skyblue;
+}
+
+main {
+    height: 100%;
+    width: 70%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.charactersheet {
+    height: 95%;
+    width: 100%;
+    background-image: url("./pictures/5E_CharacterSheet_Fillable-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.cSHeader {
+    height: 9vw;
+    width: 97%;
+    /* border: 4px black solid; */
+    display: flex;
+    position: relative;
+    top: 8px;
+}
+
+.cSHeader1 {
+    height: 100%;
+    width: 37%;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2vh;
+}
+
+.cSHeader2 {
+    height: 100%;
+    width: 45%;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#charName {
+    position: relative;
+    top: 10%;
+    right: 10%;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.user {
+    /* border: 2px black solid; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 2.5vh;
+    width: 8vw;
+}
+
+.userbot {
+    /* border: 2px black solid; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 2.5vh;
+    width: 8vw;
+    position: relative;
+    bottom: 2.5vh;
+}
+
+.cSMain {
+    height: 75vw;
+    width: 97%;
+    border: 4px black solid;
+    list-style: none;
+    display: flex;
+}
+
+#characterName {
+    height: 4vh;
+    width: 15vw;
+}
+
+.information {
+    height: 100%;
+    width: 30%;
+    border: 1px black solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statsColumn {
+    height: 63.5%;
+    width: 30%;
+    border: 2px black solid;
+    margin: 13% 0 0 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bonuses {
+    height: 67%;
+    width: 58%;
+    border: 2px black solid;
+    margin: 10% 0 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.passiveperception {
+    width: 90%;
+    height: 4%;
+    border: 2px black solid;
+    margin: 10% 0 0 1%;
+    position: relative;
+    bottom: 2%;
+    left: 4%;
+}
+
+.otherprof {
+    width: 90%;
+    height: 21%;
+    border: 2px black solid;
+    position: relative;
+    bottom: 1%;
+    left: 4%;
+}
+
+.stats {
+    height: 5%;
+    width: 25%;
+    position: relative;
+    top: 1%;
+}
+
+.inspiration {
+    height: 3%;
+    width: 12%;
+    margin: 5% 0 13% 5%;
+    border-radius: 3%;
+}
+
+.savingThrows {
+    height: 20%;
+    width: 30%;
+    border: 2px black solid;
+}

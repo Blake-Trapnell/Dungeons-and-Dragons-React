@@ -1,72 +1,33 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import "./App.css";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {statsRoller} from "./components/statsRoller"
 
 export default class App extends Component {
   constructor() {
     super()
     this.state = {
-      stats: {}
+      highestStat: ``,
+      hSN: 8,
+      ddClass: "",
+      ddRace: "",
+      racialTraits: "",
+      speed: "",
+      stats: { dex: 8, str: 8, wis: 8, int: 8, con: 8, cha: 8 }
 
     }
+    // statsRoller = statsRoller.bind(this)
   }
+      rollTheDice = () => {
+        console.log(this.state.stats) 
+        statsRoller()
+      }
 
 
-render() {
+  render() {
     return (
       <div className="page">
-      <body>
-        <div className="leftpage"></div>
-        <main>
-      <header>
-        <nav></nav>
-      </header>
-          <div className="charactersheet">
-            <div className="cSHeader">
-              <div className="cSHeader1">
-                <input id="characterName" type="text" placeholder="name"/>
-              </div>
-              <div className="cSHeader2">
-                  <input className="user"/>
-                  <input className="user"/>
-                  <input className="user"/>
-                  <input className="userbot"/>
-                  <input className="userbot"/>
-                  <input className="userbot"/>
-              </div>
-            </div>
-            <div className="cSMain">
-              <div className="information">
-                <div className="statsColumn">
-                  <input className="stats" type="text"/>
-                  <input className="stats" type="text"/>
-                  <input className="stats" type="text"/>
-                  <input className="stats" type="text"/>
-                  <input className="stats" type="text"/>
-                  <input className="stats" type="text"/>
-                </div>
-                <div className="bonuses">
-                  <input className="inspiration"/>
-                  <input className="inspiration"/>
-                  <div className="savingThrows"></div>
-                  <div className="skills"></div>
-                </div>
-                <div className="passiveperception"></div>
-                <div className="otherprof"></div>
-              </div>
-              <div className="information"></div>
-              <div className="information"></div>
-            </div>
-        </div>
-        </main>
-      <footer></footer>
-        <div className="rightpage"></div>
-
-      </body>
-
-
-
+        <button onClick={this.rollTheDice}>Roll The Dice</button>
       </div>
-  );
-}
+    );
+  }
 }
